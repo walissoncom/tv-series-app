@@ -32,7 +32,7 @@ class SingleSeries extends Component {
                         <p>
                             <img alt="Show" className="show-cover" src={ show.image.original } />
                         </p>
-                        <p>Summary: { show.summary }</p>
+                        <p dangerouslySetInnerHTML={{ __html: show.summary }}></p>
                         <p><a href={ show.officialSite } target="_blank">Official Website</a></p>
                         <p>Status: { show.status }</p>
                     </div>
